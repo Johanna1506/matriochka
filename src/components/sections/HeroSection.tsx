@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
 
   return (
     <>
-      <section className="bg-white min-h-screen flex flex-col items-center justify-center py-16 px-4">
+      <section className="bg-white min-h-[calc(100vh-100px)] flex flex-col items-center justify-center py-16 px-4">
       <Logo size="large" className="mb-8" />
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black text-center mb-6">
         {t('sections.hero.heading')}

@@ -1,46 +1,82 @@
-# Getting Started with Create React App
+# Matriochka Conseil
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Site web statique pour Matriochka Conseil - Cabinet de conseil en structuration et pilotage de projets.
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Site web single-page présentant les services de Matriochka Conseil, spécialisé dans l'accompagnement des dirigeants, fondateurs et solopreneurs pour structurer et piloter leurs projets clés jusqu'à des résultats concrets.
 
-### `npm start`
+## Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React 19** avec **TypeScript**
+- **TailwindCSS** pour le styling
+- **react-i18next** pour l'internationalisation (français)
+- **Create React App** comme outil de build
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation
 
-### `npm test`
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Développement
 
-### `npm run build`
+Pour lancer le serveur de développement :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Le site sera accessible sur [http://localhost:3000](http://localhost:3000)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Build de production
 
-### `npm run eject`
+Pour créer un build de production :
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm run build
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Les fichiers optimisés seront générés dans le dossier `build/`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Structure du projet
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+src/
+├── components/
+│   ├── layout/          # Composants de mise en page (WavyDivider)
+│   ├── sections/        # Sections de la page
+│   ├── ui/              # Composants UI réutilisables (Button, Logo, Icon)
+│   └── types/           # Types TypeScript
+├── locales/             # Fichiers de traduction (fr.json)
+├── assets/              # Assets statiques
+├── App.tsx              # Composant principal
+└── index.tsx            # Point d'entrée
+```
 
-## Learn More
+## Images
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Les images doivent être placées dans `public/assets/images/` :
+- `matryoshka.avif` - Photo des poupées Matriochka
+- `elsa-plaud.jpeg` - Photo d'Elsa PLAUD, fondatrice
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Caractéristiques
+
+- Design noir et blanc avec fond #121212
+- Responsive design (mobile-first)
+- Accessibilité (ARIA labels, navigation au clavier)
+- Internationalisation prête (actuellement en français)
+- Composants réutilisables et modulaires
+
+## Scripts disponibles
+
+- `npm start` - Lance le serveur de développement
+- `npm run build` - Crée un build de production
+- `npm test` - Lance les tests
+- `npm run eject` - Éjecte Create React App (irréversible)
+
+## Notes
+
+- Le projet utilise `legacy-peer-deps` pour résoudre les conflits de dépendances (voir `.npmrc`)
+- TailwindCSS v3 est utilisé (compatible avec Create React App)
+- Les images sont automatiquement converties en noir et blanc via le filtre CSS `grayscale`

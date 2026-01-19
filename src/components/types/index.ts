@@ -9,7 +9,7 @@ export interface ButtonProps {
 }
 
 export interface IconProps {
-  name: 'matryoshka' | 'compass' | 'person' | 'people' | 'team';
+  name: 'matryoshka' | 'compass' | 'person' | 'people' | 'team' | 'abstract-person' | 'abstract-person-1' | 'abstract-person-2' | 'abstract-person-3';
   className?: string;
 }
 

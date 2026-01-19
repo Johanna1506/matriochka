@@ -13,17 +13,17 @@ const TargetAudienceSection: React.FC = () => {
 
   const audiences = [
     {
-      icon: 'person' as const,
+      icon: 'abstract-person-1' as const,
       title: t('sections.targetAudience.solopreneur.title'),
       description: t('sections.targetAudience.solopreneur.description'),
     },
     {
-      icon: 'people' as const,
+      icon: 'abstract-person-2' as const,
       title: t('sections.targetAudience.startup.title'),
       description: t('sections.targetAudience.startup.description'),
     },
     {
-      icon: 'team' as const,
+      icon: 'abstract-person-3' as const,
       title: t('sections.targetAudience.pme.title'),
       description: t('sections.targetAudience.pme.description'),
     },
@@ -37,18 +37,16 @@ const TargetAudienceSection: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             {t('sections.targetAudience.heading')}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="flex flex-col gap-8 mb-12">
             {audiences.map((audience, index) => (
-              <div key={index} className="flex flex-col items-center text-center">
+              <div key={index} className="flex items-center gap-4">
                 <div className="mb-4 text-white">
-                  <Icon name={audience.icon} />
+                  <Icon name={audience.icon} className="w-16 h-16" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold mb-4">
-                  {audience.title}
-                </h3>
-                <p className="text-base md:text-lg">
-                  {audience.description}
-                </p>
+                <div className="flex flex-col gap-2 text-left">
+                  <h3 className="text-xl md:text-2xl font-bold">{audience.title}</h3>
+                  <p className="text-base md:text-lg">{audience.description}</p>
+                </div>
               </div>
             ))}
           </div>

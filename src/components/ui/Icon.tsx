@@ -90,6 +90,84 @@ const Icon: React.FC<IconProps> = ({ name, className = '' }) => {
           <circle cx="17" cy="6" r="2.5" stroke="currentColor" strokeWidth="2" fill="none" />
         </svg>
       );
+    case 'abstract-person':
+      return (
+        <svg
+          className={iconClasses}
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <defs>
+            <filter id="blur">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" />
+            </filter>
+          </defs>
+          <ellipse cx="12" cy="7.5" rx="3.5" ry="4" fill="currentColor" opacity="0.4" filter="url(#blur)" />
+          <ellipse cx="12" cy="16" rx="5.5" ry="6.5" fill="currentColor" opacity="0.4" filter="url(#blur)" />
+        </svg>
+      );
+    case 'abstract-person-1':
+      return (
+        <svg
+          className={iconClasses}
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <defs>
+            <filter id="blur-1">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" />
+            </filter>
+          </defs>
+          <ellipse cx="12" cy="7.5" rx="3.5" ry="4" fill="currentColor" opacity="0.4" filter="url(#blur-1)" />
+          <ellipse cx="12" cy="16" rx="5.5" ry="6.5" fill="currentColor" opacity="0.4" filter="url(#blur-1)" />
+        </svg>
+      );
+    case 'abstract-person-2':
+      return (
+        <svg
+          className={iconClasses}
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <defs>
+            <filter id="blur-2">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" />
+            </filter>
+          </defs>
+          <ellipse cx="8" cy="7.5" rx="3.5" ry="4" fill="currentColor" opacity="0.4" filter="url(#blur-2)" />
+          <ellipse cx="8" cy="16" rx="5.5" ry="6.5" fill="currentColor" opacity="0.4" filter="url(#blur-2)" />
+          <ellipse cx="16" cy="7.5" rx="3.5" ry="4" fill="currentColor" opacity="0.4" filter="url(#blur-2)" />
+          <ellipse cx="16" cy="16" rx="5.5" ry="6.5" fill="currentColor" opacity="0.4" filter="url(#blur-2)" />
+        </svg>
+      );
+    case 'abstract-person-3':
+      return (
+        <svg
+          className={iconClasses}
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <defs>
+            <filter id="blur-3">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" />
+            </filter>
+          </defs>
+          <ellipse cx="12" cy="6.5" rx="3.5" ry="4" fill="currentColor" opacity="0.4" filter="url(#blur-3)" />
+          <ellipse cx="12" cy="15" rx="5.5" ry="6.5" fill="currentColor" opacity="0.4" filter="url(#blur-3)" />
+          <ellipse cx="7" cy="8.5" rx="3.5" ry="4" fill="currentColor" opacity="0.4" filter="url(#blur-3)" />
+          <ellipse cx="7" cy="17" rx="5.5" ry="6.5" fill="currentColor" opacity="0.4" filter="url(#blur-3)" />
+          <ellipse cx="17" cy="8.5" rx="3.5" ry="4" fill="currentColor" opacity="0.4" filter="url(#blur-3)" />
+          <ellipse cx="17" cy="17" rx="5.5" ry="6.5" fill="currentColor" opacity="0.4" filter="url(#blur-3)" />
+        </svg>
+      );
     case 'matryoshka':
       return (
         <svg
