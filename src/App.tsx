@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import HeroSection from './components/sections/HeroSection';
+import ProblemSection from './components/sections/ProblemSection';
+import ImageSection from './components/sections/ImageSection';
+import RoleSection from './components/sections/RoleSection';
+import TargetAudienceSection from './components/sections/TargetAudienceSection';
+import ServicesSection from './components/sections/ServicesSection';
+import WhyMatriochkaSection from './components/sections/WhyMatriochkaSection';
+import HowWeWorkSection from './components/sections/HowWeWorkSection';
+import FinalCTASection from './components/sections/FinalCTASection';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="min-h-screen">
+      <HeroSection />
+      <ProblemSection />
+      <ImageSection />
+      <RoleSection />
+      <TargetAudienceSection />
+      <ServicesSection />
+      <WhyMatriochkaSection />
+      <HowWeWorkSection />
+      <FinalCTASection />
+    </main>
   );
-}
+};
 
 export default App;

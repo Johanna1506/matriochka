@@ -1,0 +1,118 @@
+{
+  "common": {
+    "buttons": {
+      "discoveryMeeting": "RDV découverte - 90 minutes (offert)",
+      "bookDiagnostic": "Je prends RDV pour un diagnostic (gratuit)"
+    }
+  },
+  "meta": {
+    "title": "Matriochka Conseil - Structurer. Piloter. Avancer.",
+    "description": "J'aide les dirigeants, fondateurs et solopreneurs à reprendre le contrôle en structurant et pilotant leurs projets clés, jusqu'à des résultats concrets."
+  },
+  "sections": {
+    "hero": {
+      "heading": "Structurer. Piloter. Avancer.",
+      "tagline": "J'aide les dirigeants, fondateurs et solopreneurs à reprendre le contrôle en structurant et pilotant leurs projets clés, jusqu'à des résultats concrets.",
+      "cta": "RDV découverte - 90 minutes (offert)"
+    },
+    "problem": {
+      "heading": "Quand décider ne suffit plus",
+      "points": {
+        "tooManyTopics": "trop de sujets ouverts",
+        "decisionsWithoutEffect": "des décisions sans effet réel",
+        "stagnatingProjects": "des projets structurants qui stagnent",
+        "highMentalLoad": "une charge mentale élevée"
+      },
+      "conclusion": "Il faut un cadre clair pour avancer.",
+      "cta": "Je prends RDV pour un diagnostic (gratuit)"
+    },
+    "role": {
+      "heading": "Mon rôle",
+      "description": "Je suis partenaire de structuration et de pilotage.",
+      "points": {
+        "clarifyStakes": "je clarifie les vrais enjeux",
+        "transformStrategy": "je transforme la stratégie en projets",
+        "frameArbitratePilot": "je cadre, j'arbitre, je pilote",
+        "involveUntilResults": "je m'implique jusqu'aux résultats"
+      },
+      "conclusion": "Je ne fais pas que conseiller. Je fais avancer."
+    },
+    "targetAudience": {
+      "heading": "Si vous vous reconnaissez ici",
+      "solopreneur": {
+        "title": "Solopreneur",
+        "description": "Votre activité est lancée mais peine à décoller. >> Offre, commercial, actions à structurer et piloter."
+      },
+      "startup": {
+        "title": "Startup (10-15 pers.)",
+        "description": "Votre croissance est difficile à organiser. >> Projets, rôles et priorités à cadrer."
+      },
+      "pme": {
+        "title": "PME",
+        "description": "Votre organisation semble lourde et vos projets prennent trop de temps. >> Rationaliser et sécuriser l'avancement de votre activité."
+      },
+      "cta": "Je prends RDV pour un diagnostic (gratuit)"
+    },
+    "services": {
+      "heading": "Mes accompagnements",
+      "audit": {
+        "title": "Audit Organisation & Projets",
+        "description": "Comprendre où ça bloque",
+        "duration": "2-3 semaines"
+      },
+      "structuring": {
+        "title": "Structuration & Pilotage de projets clés",
+        "description": "Passer de la décision à l'exécution.",
+        "duration": "6-12 semaines"
+      },
+      "rightHand": {
+        "title": "Bras droit du dirigeant externalisé",
+        "description": "Aider à la prise de décision",
+        "duration": "Mensuel"
+      },
+      "cta": "RDV découverte - 90 minutes (offert)"
+    },
+    "whyMatriochka": {
+      "heading": "Pourquoi Matriochka",
+      "points": {
+        "layerByLayer": "Une analyse strate après strate",
+        "identifyRoot": "L'identification du VRAI noeud du problème",
+        "stepByStep": "Une croissance pas à pas, sans brûler les étapes"
+      },
+      "differentiation": {
+        "heading": "Ce qui me différencie",
+        "points": {
+          "background": "Un parcours de dirigeante & d'entrepreneure",
+          "actionablePlan": "Un plan actionnable en 45 jours max",
+          "kpiFees": "20% d'honoraires indexés sur des KPI"
+        }
+      },
+      "founder": {
+        "name": "Elsa PLAUD",
+        "title": "Fondatrice de Matriochka Conseil"
+      }
+    },
+    "howWeWork": {
+      "heading": "Comment on travaille",
+      "steps": {
+        "step1": "1. RDV découverte - 90 minutes (gratuit)",
+        "step2": "2. Audit & cadrage - 4 jours à 6 semaines",
+        "step3": "3. Déploiement en interne ou piloté par mes soins",
+        "step4": "4. Suivi mensuel pendant 3 à 6 mois"
+      }
+    },
+    "finalCTA": {
+      "heading": "Prêt à faire avancer l'essentiel?",
+      "cta": "RDV découverte - 90 minutes (offert)",
+      "additionalInfo": "(gratuit • sans engagement • confidentiel!)"
+    }
+  },
+  "aria": {
+    "logo": "Matriochka Conseil - Logo",
+    "discoveryButton": "Prendre rendez-vous pour une découverte de 90 minutes offerte",
+    "diagnosticButton": "Prendre rendez-vous pour un diagnostic gratuit",
+    "matryoshkaImage": "Photographie de poupées Matriochka de différentes tailles",
+    "founderImage": "Photo d'Elsa PLAUD, fondatrice de Matriochka Conseil"
+  }
+}
+
