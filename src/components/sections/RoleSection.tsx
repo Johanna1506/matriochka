@@ -14,8 +14,7 @@ const RoleSection: React.FC = () => {
 
   return (
     <>
-      <WavyDivider variant="white" />
-      <section className="bg-white text-black py-16 px-4">
+      <section className="bg-[#f5f5f5] text-black py-8 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">
             {t('sections.role.heading')}

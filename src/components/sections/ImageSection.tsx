@@ -7,17 +7,17 @@ const ImageSection: React.FC = () => {
 
   return (
     <>
-      <section className="bg-black py-16 px-4">
+      <section className="bg-[#121212]">
         <div className="max-w-5xl mx-auto">
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/matryoshka.avif`}
+            src={`${process.env.PUBLIC_URL}/assets/images/matriochka-dolls.jpeg`}
             alt={t('aria.matryoshkaImage')}
-            className="w-full h-auto object-cover rounded-lg grayscale"
+            className="w-full h-auto object-cover grayscale"
             loading="lazy"
           />
         </div>
       </section>
-      <WavyDivider variant="white" />
+      <WavyDivider variant="black" rotate />
     </>
   );
 };

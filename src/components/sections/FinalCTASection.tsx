@@ -1,20 +1,21 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import Logo from '../ui/Logo';
+import { useNavigate } from 'react-router-dom';
 import Button from '../ui/Button';
 import WavyDivider from '../layout/WavyDivider';
 
 const FinalCTASection: React.FC = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const handleDiscoveryClick = () => {
-    // TODO: Add booking functionality
+    navigate('/rdv-decouverte');
   };
 
   return (
     <>
       <WavyDivider variant="black" />
-      <section className="bg-black text-white py-16 px-4">
+      <section className="bg-[#121212] text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
@@ -36,7 +37,11 @@ const FinalCTASection: React.FC = () => {
               </p>
             </div>
             <div className="flex justify-center lg:justify-end">
-              <Logo size="medium" />
+              <img 
+                src="/assets/images/logo_white.png" 
+                alt={t('aria.logo')}
+                className="w-32 h-32"
+              />
             </div>
           </div>
         </div>

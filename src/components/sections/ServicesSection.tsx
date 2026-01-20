@@ -1,14 +1,16 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import Icon from '../ui/Icon';
 import Button from '../ui/Button';
 import WavyDivider from '../layout/WavyDivider';
 
 const ServicesSection: React.FC = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const handleDiscoveryClick = () => {
-    // TODO: Add booking functionality
+    navigate('/rdv-decouverte');
   };
 
   const services = [
@@ -31,8 +33,7 @@ const ServicesSection: React.FC = () => {
 
   return (
     <>
-      <WavyDivider variant="white" />
-      <section className="bg-white text-black py-16 px-4">
+      <section className="bg-[#f5f5f5] text-black py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             {t('sections.services.heading')}

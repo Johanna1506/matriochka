@@ -25,8 +25,8 @@ const Button: React.FC<ButtonProps> = ({
 
   const baseClasses = 'rounded-3xl px-6 py-3 text-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2';
   const variantClasses = variant === 'primary'
-    ? 'bg-black text-white hover:bg-gray-800 focus:ring-black'
-    : 'bg-white text-black hover:bg-gray-100 focus:ring-white';
+    ? 'bg-[#121212] text-white hover:bg-gray-800 focus:ring-[#121212]'
+    : 'bg-[#f5f5f5] text-black hover:bg-gray-100 focus:ring-[#f5f5f5]';
 
   return (
     <button

@@ -75,6 +75,31 @@ Les images doivent être placées dans `public/assets/images/` :
 - `npm test` - Lance les tests
 - `npm run eject` - Éjecte Create React App (irréversible)
 
+## Déploiement sur GitHub Pages
+
+Le projet est configuré pour un déploiement automatique sur GitHub Pages.
+
+### Configuration initiale
+
+1. **Mettre à jour le champ `homepage` dans `package.json`** :
+   - Remplacez `USERNAME` par votre nom d'utilisateur GitHub
+   - Si votre repo s'appelle `matriochka`, l'URL sera : `https://USERNAME.github.io/matriochka`
+   - Si c'est un site utilisateur/organisation (repo `USERNAME.github.io`), utilisez : `https://USERNAME.github.io`
+
+2. **Activer GitHub Pages dans les paramètres du repository** :
+   - Allez dans Settings → Pages
+   - Source : sélectionnez "GitHub Actions"
+
+3. **Le déploiement se fait automatiquement** :
+   - À chaque push sur la branche `main`, le workflow GitHub Actions construit et déploie le site
+   - Le workflow peut aussi être déclenché manuellement depuis l'onglet Actions
+
+### Structure de déploiement
+
+- Workflow GitHub Actions : `.github/workflows/deploy.yml`
+- Build automatique à chaque push sur `main`
+- React Router configuré avec basename pour fonctionner sur GitHub Pages
+
 ## Notes
 
 - Le projet utilise `legacy-peer-deps` pour résoudre les conflits de dépendances (voir `.npmrc`)

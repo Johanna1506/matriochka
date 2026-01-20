@@ -1,27 +1,31 @@
 import React from 'react';
-import HeroSection from './components/sections/HeroSection';
-import ProblemSection from './components/sections/ProblemSection';
-import ImageSection from './components/sections/ImageSection';
-import RoleSection from './components/sections/RoleSection';
-import TargetAudienceSection from './components/sections/TargetAudienceSection';
-import ServicesSection from './components/sections/ServicesSection';
-import WhyMatriochkaSection from './components/sections/WhyMatriochkaSection';
-import HowWeWorkSection from './components/sections/HowWeWorkSection';
-import FinalCTASection from './components/sections/FinalCTASection';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import DiscoveryPage from './pages/DiscoveryPage';
+
+const getBasename = (): string => {
+  const homepage = process.env.PUBLIC_URL || '';
+  if (homepage && homepage !== '/') {
+    try {
+      const url = new URL(homepage);
+      return url.pathname.endsWith('/') ? url.pathname.slice(0, -1) : url.pathname;
+    } catch {
+      return '';
+    }
+  }
+  return '';
+};
 
 const App: React.FC = () => {
+  const basename = getBasename();
+  
   return (
-    <main className="min-h-screen">
-      <HeroSection />
-      <ProblemSection />
-      <ImageSection />
-      <RoleSection />
-      <TargetAudienceSection />
-      <ServicesSection />
-      <WhyMatriochkaSection />
-      <HowWeWorkSection />
-      <FinalCTASection />
-    </main>
+    <Router basename={basename}>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/rdv-decouverte" element={<DiscoveryPage />} />
+      </Routes>
+    </Router>
   );
 };
 

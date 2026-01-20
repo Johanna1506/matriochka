@@ -107,12 +107,87 @@
       "additionalInfo": "(gratuit • sans engagement • confidentiel!)"
     }
   },
+  "discoveryPage": {
+    "header": {
+      "title": "RDV Découverte - 90 minutes",
+      "subtitle": "Faire le point. Décider. Avancer.",
+      "description": "Un échange structuré pour clarifier votre situation, identifier ce qui bloque vraiment et décider du bon niveau d'accompagnement - ou non.",
+      "cta": "Réserver mon RDV (gratuit)",
+      "disclaimer": "(90 min • sans engagement • confidentiel)"
+    },
+    "benefits": {
+      "heading": "Ce que ce RDV vous apporte :",
+      "points": {
+        "clarity": "plus de clarté sur votre situation",
+        "identifyRoot": "identification du vrai noeud du problème",
+        "priorities": "priorités claires à court terme",
+        "decisions": "décisions éclairées sur la suite"
+      }
+    },
+    "targetAudience": {
+      "heading": "Ce RDV est fait pour vous si :",
+      "points": {
+        "leader": "vous êtes dirigeant, fondateur ou solopreneur",
+        "alone": "vous portez trop de décisions seul",
+        "projects": "vous avez des projets structurants à faire avancer",
+        "complexity": "vous sentez que la complexité augmente"
+      },
+      "cta": "Réserver mon RDV"
+    },
+    "notThis": {
+      "heading": "Ce RDV n'est pas :",
+      "points": {
+        "salesPitch": "un pitch commercial",
+        "vagueCoaching": "une séance de coaching floue",
+        "commitment": "un engagement à travailler ensemble"
+      },
+      "keyMessage": "C'est un échange clair, cadré et honnête."
+    },
+    "whyWithMe": {
+      "heading": "Pourquoi avec moi",
+      "points": {
+        "background": "parcours de dirigeante & entrepreneure",
+        "decisions": "habitudes des décisions engageantes",
+        "approach": "approche structurée, orientée résultats",
+        "perspective": "regard lucide, sans complaisance"
+      },
+      "cta": "Réserver mon RDV"
+    },
+    "howItWorks": {
+      "heading": "Comment ça se passe",
+      "steps": {
+        "step1": "1. RDV en présentiel ou visio - 90 minutes",
+        "step2": "2. questions préparatoires en amont",
+        "step3": "3. échange confidentiel",
+        "step4": "4. à l'issue:",
+        "step4a": "• soit une suite pertinente",
+        "step4b": "• soit plus de clarté, sans engagement"
+      }
+    },
+    "finalCTA": {
+      "heading": "Prêt à faire avancer l'essentiel ?",
+      "cta": "Réserver mon RDV découverte",
+      "disclaimer": "(gratuit • sans engagement)",
+      "contactQuestion": "Une question avant de réserver ?",
+      "contactEmail": "elsa@matriochka-conseil.fr"
+    }
+  },
   "aria": {
     "logo": "Matriochka Conseil - Logo",
     "discoveryButton": "Prendre rendez-vous pour une découverte de 90 minutes offerte",
     "diagnosticButton": "Prendre rendez-vous pour un diagnostic gratuit",
     "matryoshkaImage": "Photographie de poupées Matriochka de différentes tailles",
     "founderImage": "Photo d'Elsa PLAUD, fondatrice de Matriochka Conseil"
+  },
+  "calendar": {
+    "discovery": {
+      "title": "RDV Découverte - Matriochka Conseil",
+      "description": "RDV découverte de 90 minutes (gratuit) pour faire le point, clarifier votre situation et identifier ce qui bloque vraiment."
+    },
+    "diagnostic": {
+      "title": "RDV Diagnostic - Matriochka Conseil",
+      "description": "RDV diagnostic gratuit pour comprendre où ça bloque dans votre organisation et vos projets."
+    }
   }
 }
 

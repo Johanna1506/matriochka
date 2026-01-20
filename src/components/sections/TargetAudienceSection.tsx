@@ -32,7 +32,7 @@ const TargetAudienceSection: React.FC = () => {
   return (
     <>
       <WavyDivider variant="black" />
-      <section className="bg-black text-white py-16 px-4">
+      <section className="bg-[#121212] text-white py-8 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             {t('sections.targetAudience.heading')}
@@ -61,6 +61,7 @@ const TargetAudienceSection: React.FC = () => {
           </div>
         </div>
       </section>
+      <WavyDivider variant="black" rotate />
     </>
   );
 };

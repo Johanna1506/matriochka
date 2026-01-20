@@ -9,12 +9,13 @@ export interface ButtonProps {
 }
 
 export interface IconProps {
-  name: 'matryoshka' | 'compass' | 'person' | 'people' | 'team' | 'abstract-person' | 'abstract-person-1' | 'abstract-person-2' | 'abstract-person-3';
+  name: 'matryoshka' | 'compass' | 'person' | 'people' | 'team' | 'abstract-person' | 'abstract-person-1' | 'abstract-person-2' | 'abstract-person-3' | 'diamond';
   className?: string;
 }
 
 export interface WavyDividerProps {
   variant?: 'white' | 'black';
   className?: string;
+  rotate?: boolean;
 }
 

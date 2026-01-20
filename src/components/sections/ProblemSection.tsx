@@ -2,13 +2,11 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Button from '../ui/Button';
 import WavyDivider from '../layout/WavyDivider';
+import { useCalendarLink } from '../../hooks/useCalendarLink';
 
 const ProblemSection: React.FC = () => {
   const { t } = useTranslation();
-
-  const handleDiagnosticClick = () => {
-    // TODO: Add booking functionality
-  };
+  const handleDiagnosticClick = useCalendarLink('diagnostic');
 
   const painPoints = [
     t('sections.problem.points.tooManyTopics'),
@@ -18,7 +16,7 @@ const ProblemSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-black text-white py-16 px-4">
+    <section className="bg-[#121212] text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
             {t('sections.problem.heading')}

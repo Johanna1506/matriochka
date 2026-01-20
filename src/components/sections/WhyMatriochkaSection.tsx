@@ -20,7 +20,7 @@ const WhyMatriochkaSection: React.FC = () => {
   return (
     <>
       <WavyDivider variant="black" />
-      <section className="bg-black text-white py-16 px-4">
+      <section className="bg-[#121212] text-white py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
@@ -62,6 +62,7 @@ const WhyMatriochkaSection: React.FC = () => {
           </div>
         </div>
       </section>
+      <WavyDivider variant="black" rotate />
     </>
   );
 };

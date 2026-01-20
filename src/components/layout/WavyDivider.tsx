@@ -1,29 +1,38 @@
 import React from 'react';
 import { WavyDividerProps } from '../types';
 
-const ScallopDivider: React.FC<WavyDividerProps> = ({ variant = 'white', className = '' }) => {
-  const fillColor = variant === 'white' ? '#FFFFFF' : '#121212';
-  const scallopWidth = 60;
-  const scallopRadius = scallopWidth / 2;
+const ScallopDivider: React.FC<WavyDividerProps> = ({ variant = 'white', className = '', rotate = false }) => {
+  const fillColor = variant === 'white' ? '#f5f5f5' : '#121212';
+  const scallopWidth = 120;
+  const scallopRadius = scallopWidth / 1.7; // Rayon = moitié de la largeur pour des demi-cercles parfaits
+  const viewBoxWidth = 1200;
+  const startY = scallopRadius; // Commence au niveau du rayon
   
-  let pathData = 'M0,30'; // Commence au milieu à gauche
+  let pathData = `M0,${startY}`; // Commence au niveau du rayon
   
-  // Crée les demi-cercles vers le haut
-  for (let x = 0; x <= 1200; x += scallopWidth) {
-    const centerX = x + scallopRadius;
+  // Crée les demi-cercles vers le haut, en s'assurant qu'ils s'alignent parfaitement
+  const numScallops = Math.ceil(viewBoxWidth / scallopWidth);
+  const actualWidth = numScallops * scallopWidth;
+  
+  for (let i = 0; i < numScallops; i++) {
+    const x = i * scallopWidth;
+    const nextX = x + scallopWidth;
     // Arc : rx,ry rotation large-arc-flag sweep-flag x,y
-    pathData += ` A${scallopRadius},${scallopRadius} 0 0,1 ${x + scallopWidth},30`;
+    pathData += ` A${scallopRadius},${scallopRadius} 0 0,1 ${nextX},${startY}`;
   }
   
   // Ferme le chemin : descend, va à gauche, remonte
-  pathData += ' L1200,120 L0,120 Z';
+  const bottomY = startY + 90; // Hauteur totale du viewBox
+  pathData += ` L${actualWidth},${bottomY} L0,${bottomY} Z`;
 
+  const viewBoxHeight = bottomY;
+  
   return (
-    <div className={`w-full ${className}`} aria-hidden="true">
+    <div className={`w-full ${className} bg-[#f5f5f5]`} aria-hidden="true">
       <svg
-        viewBox="0 0 1200 120"
+        viewBox={`0 0 ${actualWidth} ${viewBoxHeight}`}
         preserveAspectRatio="none"
-        className="w-full h-20 md:h-24"
+        className={`w-full h-20 md:h-24 ${rotate ? 'rotate-180' : ''}`}
         fill={fillColor}
       >
         <path
