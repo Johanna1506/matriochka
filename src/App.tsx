@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import DiscoveryPage from './pages/DiscoveryPage';
 
@@ -16,11 +16,32 @@ const getBasename = (): string => {
   return '';
 };
 
+const RedirectHandler: React.FC = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.search.includes('?/')) {
+      const searchParams = new URLSearchParams(location.search);
+      const redirectPath = searchParams.get('/');
+      
+      if (redirectPath) {
+        const cleanPath = redirectPath.replace(/~and~/g, '&');
+        const newPath = cleanPath.startsWith('/') ? cleanPath : '/' + cleanPath;
+        window.history.replaceState({}, '', newPath);
+        window.location.reload();
+      }
+    }
+  }, [location]);
+
+  return null;
+};
+
 const App: React.FC = () => {
   const basename = getBasename();
   
   return (
     <Router basename={basename}>
+      <RedirectHandler />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/rdv-decouverte" element={<DiscoveryPage />} />
