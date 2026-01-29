@@ -100,6 +100,18 @@ Le projet est configuré pour un déploiement automatique sur GitHub Pages.
 - Build automatique à chaque push sur `main`
 - React Router configuré avec basename pour fonctionner sur GitHub Pages
 
+## Déploiement Netlify + domaine OVH
+
+1. **Netlify** : connecter le repo GitHub sur [app.netlify.com](https://app.netlify.com) (New site → Import from Git). La config est dans `netlify.toml`.
+
+2. **Domaine OVH** : dans Netlify, Site settings → Domain management → Add custom domain (ex. `matriochka.fr`). Netlify affichera l’adresse à utiliser (ex. `xxx.netlify.app` pour un CNAME).
+
+3. **DNS OVH** : dans l’espace OVH (Web Cloud → Noms de domaine → Zone DNS), ajouter :
+   - **CNAME** : `www` (ou sous-domaine) → `xxx.netlify.app` (valeur indiquée par Netlify)
+   - **Redirection** (optionnel) : racine `matriochka.fr` → `https://www.matriochka.fr`
+
+4. **HTTPS** : Netlify provisionne le certificat Let’s Encrypt après vérification du domaine.
+
 ## Notes
 
 - Le projet utilise `legacy-peer-deps` pour résoudre les conflits de dépendances (voir `.npmrc`)
