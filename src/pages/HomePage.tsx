@@ -6,6 +6,8 @@ import RoleSection from '../components/sections/RoleSection';
 import TargetAudienceSection from '../components/sections/TargetAudienceSection';
 import ServicesSection from '../components/sections/ServicesSection';
 import WhyMatriochkaSection from '../components/sections/WhyMatriochkaSection';
+import LegitimacySection from '../components/sections/LegitimacySection';
+import ResultsApproachSection from '../components/sections/ResultsApproachSection';
 import HowWeWorkSection from '../components/sections/HowWeWorkSection';
 import FinalCTASection from '../components/sections/FinalCTASection';
 
@@ -20,6 +22,8 @@ const HomePage: React.FC = () => {
       <ServicesSection />
       <WhyMatriochkaSection />
       <HowWeWorkSection />
+      <LegitimacySection />
+      <ResultsApproachSection />
       <FinalCTASection />
     </main>
   );

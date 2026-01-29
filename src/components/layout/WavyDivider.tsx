@@ -3,8 +3,8 @@ import { WavyDividerProps } from '../types';
 
 const ScallopDivider: React.FC<WavyDividerProps> = ({ variant = 'white', className = '', rotate = false }) => {
   const fillColor = variant === 'white' ? '#f5f5f5' : '#121212';
-  const scallopWidth = 120;
-  const scallopRadius = scallopWidth / 1.7; // Rayon = moitié de la largeur pour des demi-cercles parfaits
+  const scallopWidth = 40;
+  const scallopRadius = scallopWidth / 2; // Rayon = moitié de la largeur pour des demi-cercles parfaits
   const viewBoxWidth = 1200;
   const startY = scallopRadius; // Commence au niveau du rayon
   
@@ -26,9 +26,10 @@ const ScallopDivider: React.FC<WavyDividerProps> = ({ variant = 'white', classNa
   pathData += ` L${actualWidth},${bottomY} L0,${bottomY} Z`;
 
   const viewBoxHeight = bottomY;
+  const backgroundColor = variant === 'white'  ? '#121212' : '#f5f5f5'
   
   return (
-    <div className={`w-full ${className} bg-[#f5f5f5]`} aria-hidden="true">
+    <div className={`w-full ${className} bg-[${backgroundColor}]`} aria-hidden="true">
       <svg
         viewBox={`0 0 ${actualWidth} ${viewBoxHeight}`}
         preserveAspectRatio="none"

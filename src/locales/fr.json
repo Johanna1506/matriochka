@@ -13,7 +13,13 @@
     "hero": {
       "heading": "Structurer. Piloter. Avancer.",
       "tagline": "J'aide les dirigeants, fondateurs et solopreneurs à reprendre le contrôle en structurant et pilotant leurs projets clés, jusqu'à des résultats concrets.",
-      "cta": "RDV découverte - 95 minutes (offert)"
+      "cta": "RDV découverte - 90 minutes (offert)",
+      "desktop": {
+        "headingLine1": "Structurer la stratégie.",
+        "headingLine2": "Piloter les projets qui engagent vraiment.",
+        "tagline": "J'aide <strong>les dirigeants, fondateurs et entrepreneurs</strong> à <strong>reprendre le contrôle de leur trajectoire</strong> en structurant et pilotant leurs projets clés, jusqu'à des résultats concrets.",
+        "cta": "Faire le point sur ma situation - 90 minutes (offert)"
+      }
     },
     "problem": {
       "heading": "Quand décider ne suffit plus",
@@ -24,7 +30,18 @@
         "highMentalLoad": "une charge mentale élevée"
       },
       "conclusion": "Il faut un cadre clair pour avancer.",
-      "cta": "Je prends RDV pour un diagnostic (gratuit)"
+      "cta": "Je prends RDV pour un diagnostic (gratuit)",
+      "desktop": {
+        "heading": "Quand la responsabilité devient trop lourde à porter seul",
+        "intro": "Créer, faire grandir ou transformer une entreprise, c'est porter en permanence :",
+        "points": {
+          "engaging": "des décisions engageantes, souvent irréversibles.",
+          "structuring": "des projets structurants qui conditionnent la suite.",
+          "complexity": "une complexité croissante, organisationnelle et humaine.",
+          "mentalLoad": "une forte charge mentale, rarement partagée."
+        },
+        "conclusion": "Quand tout repose sur vous, décider ne suffit plus. Il faut structurer, sécuriser et piloter dans la durée."
+      }
     },
     "role": {
       "heading": "Mon rôle",
@@ -35,7 +52,17 @@
         "frameArbitratePilot": "je cadre, j'arbitre, je pilote",
         "involveUntilResults": "je m'implique jusqu'aux résultats"
       },
-      "conclusion": "Je ne fais pas que conseiller. Je fais avancer."
+      "conclusion": "Je ne fais pas que conseiller. Je fais avancer.",
+      "desktop": {
+        "description": "Je suis <strong>partenaire de structuration et de pilotage</strong> aux côtés du dirigeant. Concrètement, je vous aide à :",
+        "points": {
+          "clarifyStakes": "clarifier les vrais enjeux (pas les symptômes)",
+          "transformStrategy": "transformer la stratégie en projets concrets",
+          "frameArbitratePilot": "poser un cadre de pilotage clair",
+          "involveUntilResults": "tenir la barre jusqu'aux résultats."
+        },
+        "conclusion": "Je ne me contente pas de conseils.\n<strong>Je m'implique pour que ça avance réellement.</strong>"
+      }
     },
     "targetAudience": {
       "heading": "Si vous vous reconnaissez ici",
@@ -51,7 +78,25 @@
         "title": "PME",
         "description": "Votre organisation semble lourde et vos projets prennent trop de temps. >> Rationaliser et sécuriser l'avancement de votre activité."
       },
-      "cta": "Je prends RDV pour un diagnostic (gratuit)"
+      "cta": "Je prends RDV pour un diagnostic (gratuit)",
+      "desktop": {
+        "heading": "Dans quelles situations j'interviens",
+        "entrepreneur": {
+          "title": "Solopreneur - l'activité stagne",
+          "problems": "Offre floue, discours commercial peu efficace, actions dispersées",
+          "solution": "Je structure l'offre, la stratégie commerciale et je pilote un plan d'actions concret."
+        },
+        "startup": {
+          "title": "Startup - la croissance se désorganise",
+          "problems": "Projets empilés, silos flous, dirigeant trop sollicité",
+          "solution": "Je cadre et pilote les projets structurants (organisation, RH, commercial, stratégie)."
+        },
+        "pme": {
+          "title": "PME - l'historique freine l'efficacité",
+          "problems": "Process lourds, priorités confuses, projets transverses qui n'avancent pas",
+          "solution": "Je rationalise, priorise et sécurise l'avancement des chantiers clés."
+        }
+      }
     },
     "services": {
       "heading": "Mes accompagnements",
@@ -70,7 +115,39 @@
         "description": "Aider à la prise de décision",
         "duration": "Mensuel"
       },
-      "cta": "RDV découverte - 90 minutes (offert)"
+      "cta": "RDV découverte - 90 minutes (offert)",
+      "desktop": {
+        "audit": {
+          "bullets": [
+            "Comprendre où ça bloque et par quoi commencer.",
+            "diagnostic ciblé (organisation, rôles, projets, priorités)",
+            "identification du nœud réel du problème",
+            "plan d'action clair et priorisé"
+          ],
+          "duration": "2 à 3 semaines",
+          "benefit": "Une base saine pour décider vite et juste."
+        },
+        "structuring": {
+          "bullets": [
+            "Passer de la décision à l'exécution maîtrisée.",
+            "cadrage des projets structurants",
+            "clarification des rôles et responsabilités",
+            "jalons, rituels et arbitrages en cours de route"
+          ],
+          "duration": "6 à 12 semaines",
+          "benefit": "Des projets pilotés, pas laissés à l'abandon."
+        },
+        "rightHand": {
+          "bullets": [
+            "Un bras droit pour piloter dans la durée.",
+            "priorisation et aide à la décision",
+            "suivi des projets clés",
+            "appui sur les sujets organisation, management et business"
+          ],
+          "duration": "Accompagnement mensuel",
+          "benefit": "Pour ne plus porter seul la complexité."
+        }
+      }
     },
     "whyMatriochka": {
       "heading": "Pourquoi Matriochka",
@@ -87,9 +164,41 @@
           "kpiFees": "20% d'honoraires indexés sur des KPI"
         }
       },
+      "legitimacy": {
+        "heading": "Une légitimité ancrée dans le réel",
+        "intro": "Je suis un pur produit de l'écosystème startup. J'ai :",
+        "points": {
+          "created": "créé et développé des activités",
+          "leadership": "occupé des postes de direction stratégiques",
+          "piloted": "piloté des équipes, des projets, des transformations",
+          "decisions": "pris des décisions engageantes, sous contraintes de temps et de résultats"
+        },
+        "conclusion": "Je connais de l'intérieur la solitude du dirigeant, les arbitrages difficiles et la responsabilité que représente chaque décision structurante."
+      },
+      "resultsApproach": {
+        "heading": "Une approche orientée résultats",
+        "points": {
+          "plan45": "plan d'actions actionnable en 45 jours",
+          "kpi": "objectifs et KPI définis ensemble dès le départ",
+          "fees": "20% de mes honoraires indexés sur les résultats atteints"
+        },
+        "commitment": "Mon engagement est simple :",
+        "commitmentText": "des résultats mesurables, pas des recommandations déconnectées de la réalité terrain."
+      },
       "founder": {
         "name": "Elsa PLAUD",
         "title": "Fondatrice de Matriochka Conseil"
+      },
+      "desktop": {
+        "heading": "Pourquoi Matriochka Conseil",
+        "paragraph1": "Parce qu'un business se comprend et se construit par couches.",
+        "paragraph2": "Quand on est dirigeant, on vit souvent les problèmes en surface : tensions, retards, fatigue, désorganisation. Mon travail consiste à descendre strate après strate, jusqu'à la dernière poupée : le vrai nœud du problème. C'est à cet endroit que l'on peut :",
+        "points": {
+          "decide": "décider juste",
+          "structure": "structurer durablement",
+          "grow": "faire grandir l'entreprise pas à pas, sans brûler les étapes"
+        },
+        "conclusion": "Matriochka, c'est cette conviction : on ne résout pas la complexité par des recettes rapides, mais par une analyse lucide, une structuration progressive et un pilotage rigoureux."
       }
     },
     "howWeWork": {
@@ -99,12 +208,42 @@
         "step2": "2. Audit & cadrage - 4 jours à 6 semaines",
         "step3": "3. Déploiement en interne ou piloté par mes soins",
         "step4": "4. Suivi mensuel pendant 3 à 6 mois"
+      },
+      "desktop": {
+        "heading": "Comment se déroule une mission",
+        "steps": {
+          "step1": {
+            "title": "1. RDV découverte - 90 minutes (gratuit)",
+            "description": "Clarifier votre situation, vos enjeux et le bon niveau d'accompagnement."
+          },
+          "step2": {
+            "title": "2. Audit & cadrage - 4 jours à 8 semaines selon la mission",
+            "description": "Analyse, structuration et livrables actionnables."
+          },
+          "step3": {
+            "title": "3. Déploiement (au choix)",
+            "description": "mise en œuvre en interne avec vos équipes ou pilotage de projet de transformation par mes soins."
+          },
+          "step4": {
+            "title": "4. Suivi post-mission",
+            "description": "Check mensuel pendant 3 mois pour ajuster et sécuriser dans la durée."
+          }
+        }
       }
     },
     "finalCTA": {
-      "heading": "Prêt à faire avancer l'essentiel?",
+      "heading": "Prêt à faire avancer l'essentiel ?",
       "cta": "RDV découverte - 90 minutes (offert)",
-      "additionalInfo": "(gratuit • sans engagement • confidentiel!)"
+      "additionalInfo": "(gratuit • sans engagement • confidentiel)",
+      "desktop": {
+        "heading": "Et maintenant ?",
+        "paragraph": "Si vous sentez que la complexité augmente plus vite que la structure, un premier échange permet souvent d'y voir clair rapidement.",
+        "subheading": "Me contacter",
+        "additionalInfo": "(gratuit · sans engagement · confidentiel)"
+      }
+    },
+    "footer": {
+      "copyright": "© Matriochka Conseil | Tous droits réservés"
     }
   },
   "discoveryPage": {
