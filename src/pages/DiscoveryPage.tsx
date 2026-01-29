@@ -4,6 +4,8 @@ import Button from '../components/ui/Button';
 import WavyDivider from '../components/layout/WavyDivider';
 import Icon from '../components/ui/Icon';
 import { useCalendarLink } from '../hooks/useCalendarLink';
+import logoWhite from '../assets/images/logo_white.png';
+import logoBlack from '../assets/images/logo_black.png';
 
 const DiscoveryPage: React.FC = () => {
   const { t } = useTranslation();
@@ -14,7 +16,7 @@ const DiscoveryPage: React.FC = () => {
       {/* Section 1: Header (fond blanc) */}
       <section className="bg-[#f5f5f5] min-h-[calc(100vh-100px)] flex flex-col items-center justify-center py-16 px-4">
         <img 
-          src="/assets/images/logo_black.png" 
+          src={logoBlack} 
           alt={t('aria.logo')}
           className="w-32 h-32 mb-8"
         />
@@ -217,7 +219,7 @@ const DiscoveryPage: React.FC = () => {
             </div>
             <div className="flex items-center gap-2">
               <img 
-                src="/assets/images/logo_white.png" 
+                src={logoWhite}
                 alt={t('aria.logo')}
                 className="w-32 h-32"
               />
