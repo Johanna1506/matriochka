@@ -71,7 +71,7 @@
         "description": "Votre activité est lancée mais peine à décoller. >> Offre, commercial, actions à structurer et piloter."
       },
       "startup": {
-        "title": "Startup (10-15 pers.)",
+        "title": "Startup",
         "description": "Votre croissance est difficile à organiser. >> Projets, rôles et priorités à cadrer."
       },
       "pme": {
@@ -118,28 +118,28 @@
       "cta": "RDV découverte - 90 minutes (offert)",
       "desktop": {
         "audit": {
+          "heading": "Comprendre où ça bloque et par quoi commencer.",
           "bullets": [
-            "Comprendre où ça bloque et par quoi commencer.",
             "diagnostic ciblé (organisation, rôles, projets, priorités)",
-            "identification du nœud réel du problème",
+            "identification du <strong>noeud réel du problème</strong>",
             "plan d'action clair et priorisé"
           ],
           "duration": "2 à 3 semaines",
           "benefit": "Une base saine pour décider vite et juste."
         },
         "structuring": {
+          "heading": "Passer de la décision à l'exécution maîtrisée.",
           "bullets": [
-            "Passer de la décision à l'exécution maîtrisée.",
             "cadrage des projets structurants",
             "clarification des rôles et responsabilités",
             "jalons, rituels et arbitrages en cours de route"
           ],
           "duration": "6 à 12 semaines",
-          "benefit": "Des projets pilotés, pas laissés à l'abandon."
+          "benefit": "Des projets pilotés, pas laissés à l'inertie."
         },
         "rightHand": {
+          "heading": "Un bras droit pour piloter dans la durée.",
           "bullets": [
-            "Un bras droit pour piloter dans la durée.",
             "priorisation et aide à la décision",
             "suivi des projets clés",
             "appui sur les sujets organisation, management et business"
@@ -222,7 +222,7 @@
           },
           "step3": {
             "title": "3. Déploiement (au choix)",
-            "description": "mise en œuvre en interne avec vos équipes ou pilotage de projet de transformation par mes soins."
+            "description": "Mise en œuvre en interne avec vos équipes ou pilotage de projet de transformation par mes soins."
           },
           "step4": {
             "title": "4. Suivi post-mission",
@@ -298,7 +298,7 @@
         "step1": "1. RDV en présentiel ou visio - 90 minutes",
         "step2": "2. questions préparatoires en amont",
         "step3": "3. échange confidentiel",
-        "step4": "4. à l'issue:",
+        "step4": "4. à l'issue :",
         "step4a": "• soit une suite pertinente",
         "step4b": "• soit plus de clarté, sans engagement"
       }

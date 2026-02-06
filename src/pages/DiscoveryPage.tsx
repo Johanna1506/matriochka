@@ -44,12 +44,12 @@ const DiscoveryPage: React.FC = () => {
 
       {/* Section 2: Ce que ce RDV vous apporte (fond noir) */}
       <WavyDivider variant="black" />
-      <section className="bg-black text-white py-16 px-4">
+      <section className="bg-black text-white py-8 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12">
             {t('discoveryPage.benefits.heading')}
           </h2>
-          <ul className="space-y-4 max-w-3xl mx-auto">
+          <ul className="space-y-4 max-w-3xl">
             <li className="text-lg md:text-xl">
               • {t('discoveryPage.benefits.points.clarity')}
             </li>
@@ -67,12 +67,12 @@ const DiscoveryPage: React.FC = () => {
       </section>
 
       {/* Section 3: Ce RDV est fait pour vous si (fond noir) */}
-      <section className="bg-black text-white py-16 px-4">
+      <section className="bg-black text-white py-8 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12">
             {t('discoveryPage.targetAudience.heading')}
           </h2>
-          <ul className="space-y-4 max-w-3xl mx-auto mb-12">
+          <ul className="space-y-4 max-w-3xl mb-12">
             <li className="text-lg md:text-xl">
               • {t('discoveryPage.targetAudience.points.leader')}
             </li>
@@ -86,7 +86,7 @@ const DiscoveryPage: React.FC = () => {
               • {t('discoveryPage.targetAudience.points.complexity')}
             </li>
           </ul>
-          <div className="flex justify-center">
+          <div className="flex justify-start">
             <Button
               variant="secondary"
               onClick={handleBookingClick}
@@ -99,13 +99,13 @@ const DiscoveryPage: React.FC = () => {
       </section>
 
       {/* Section 4: Ce RDV n'est pas (fond blanc) */}
-      <WavyDivider variant="black" rotate />
-      <section className="bg-[#f5f5f5] text-black py-16 px-4">
+      <WavyDivider variant="white" />
+      <section className="bg-[#f5f5f5] text-black py-8 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12">
             {t('discoveryPage.notThis.heading')}
           </h2>
-          <ul className="space-y-4 max-w-3xl mx-auto mb-8">
+          <ul className="space-y-4 max-w-3xl mb-8">
             <li className="text-lg md:text-xl">
               • {t('discoveryPage.notThis.points.salesPitch')}
             </li>
@@ -116,7 +116,7 @@ const DiscoveryPage: React.FC = () => {
               • {t('discoveryPage.notThis.points.commitment')}
             </li>
           </ul>
-          <div className="flex items-center gap-3 max-w-3xl mx-auto">
+          <div className="flex items-center gap-3 max-w-3xl">
             <Icon name="diamond" className="w-6 h-6 text-black" />
             <p className="text-lg md:text-xl font-semibold">
               {t('discoveryPage.notThis.keyMessage')}
@@ -128,10 +128,10 @@ const DiscoveryPage: React.FC = () => {
       {/* Section 5: Pourquoi avec moi (fond blanc) */}
       <section className="bg-[#f5f5f5] text-black py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12">
             {t('discoveryPage.whyWithMe.heading')}
           </h2>
-          <ul className="space-y-4 max-w-3xl mx-auto mb-12">
+          <ul className="space-y-4 max-w-3xl mb-12">
             <li className="text-lg md:text-xl">
               • {t('discoveryPage.whyWithMe.points.background')}
             </li>
@@ -145,7 +145,7 @@ const DiscoveryPage: React.FC = () => {
               • {t('discoveryPage.whyWithMe.points.perspective')}
             </li>
           </ul>
-          <div className="flex justify-center">
+          <div className="flex justify-start">
             <Button
               variant="primary"
               onClick={handleBookingClick}
@@ -161,10 +161,10 @@ const DiscoveryPage: React.FC = () => {
       <WavyDivider variant="black" />
       <section className="bg-black text-white py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12">
             {t('discoveryPage.howItWorks.heading')}
           </h2>
-          <ol className="space-y-6 max-w-3xl mx-auto">
+          <ol className="space-y-6 max-w-3xl">
             <li className="text-lg md:text-xl">
               {t('discoveryPage.howItWorks.steps.step1')}
             </li>
@@ -192,10 +192,10 @@ const DiscoveryPage: React.FC = () => {
       {/* Section 7: Final CTA (fond noir) */}
       <section className="bg-black text-white py-16 px-4 relative">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">
             {t('discoveryPage.finalCTA.heading')}
           </h2>
-          <div className="flex justify-center mb-4">
+          <div className="flex justify-start mb-4">
             <Button
               variant="secondary"
               onClick={handleBookingClick}
@@ -204,7 +204,7 @@ const DiscoveryPage: React.FC = () => {
               {t('discoveryPage.finalCTA.cta')}
             </Button>
           </div>
-          <p className="text-sm md:text-base text-gray-300 text-center mb-8">
+          <p className="text-sm md:text-base text-gray-300 mb-8">
             {t('discoveryPage.finalCTA.disclaimer')}
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">

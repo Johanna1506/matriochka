@@ -10,12 +10,14 @@ import LegitimacySection from '../components/sections/LegitimacySection';
 import ResultsApproachSection from '../components/sections/ResultsApproachSection';
 import HowWeWorkSection from '../components/sections/HowWeWorkSection';
 import FinalCTASection from '../components/sections/FinalCTASection';
+import WavyDivider from '../components/layout/WavyDivider';
 
 const HomePage: React.FC = () => {
   return (
     <main className="min-h-screen">
       <HeroSection />
       <ProblemSection />
+      <WavyDivider variant="white" />
       <ImageSection />
       <RoleSection />
       <TargetAudienceSection />

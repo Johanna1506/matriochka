@@ -54,7 +54,7 @@ const TargetAudienceSection: React.FC = () => {
       <section className="bg-[#121212] text-white py-8 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="lg:hidden">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12">
               {t('sections.targetAudience.heading')}
             </h2>
             <div className="flex flex-col gap-8 mb-12">
@@ -90,7 +90,7 @@ const TargetAudienceSection: React.FC = () => {
               ))}
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-start">
             <Button
               variant="secondary"
               onClick={handleDiagnosticClick}
@@ -101,7 +101,6 @@ const TargetAudienceSection: React.FC = () => {
           </div>
         </div>
       </section>
-      <WavyDivider variant="black" rotate />
     </>
   );
 };

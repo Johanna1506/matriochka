@@ -16,23 +16,23 @@ const ProblemSection: React.FC = () => {
 
   return (
     <section className="bg-[#121212] text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="lg:hidden">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">
               {t('sections.problem.heading')}
             </h2>
-            <ul className="space-y-4 mb-8 max-w-2xl mx-auto">
+            <ul className="space-y-4 mb-8">
               {painPoints.map((point, index) => (
                 <li key={index} className="text-lg md:text-xl">
                   • {point}
                 </li>
               ))}
             </ul>
-            <p className="text-xl md:text-2xl font-semibold text-center mb-8">
+            <p className="text-xl md:text-2xl font-semibold mb-8">
               {t('sections.problem.conclusion')}
             </p>
           </div>
-          <div className="hidden lg:block max-w-3xl mx-auto">
+          <div className="hidden lg:block max-w-3xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               {t('sections.problem.desktop.heading')}
             </h2>
@@ -49,7 +49,7 @@ const ProblemSection: React.FC = () => {
               {t('sections.problem.desktop.conclusion')}
             </p>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-start">
             <Button
               variant="secondary"
               onClick={handleDiagnosticClick}

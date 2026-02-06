@@ -51,6 +51,7 @@ const FinalCTASection: React.FC = () => {
           </div>
         </div>
       </section>
+      <WavyDivider variant="black" />
     </>
   );
 };

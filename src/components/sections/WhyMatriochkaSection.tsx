@@ -9,7 +9,7 @@ const WhyMatriochkaSection: React.FC = () => {
     <>
       <WavyDivider variant="black" />
       <section className="bg-[#121212] text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             {t('sections.whyMatriochka.desktop.heading')}
           </h2>

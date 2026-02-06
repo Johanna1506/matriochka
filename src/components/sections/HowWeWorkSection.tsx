@@ -16,9 +16,9 @@ const HowWeWorkSection: React.FC = () => {
     <>
       <WavyDivider variant="white" />
       <section className="bg-[#f5f5f5] text-black py-8 px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="lg:hidden">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12">
               {t('sections.howWeWork.heading')}
             </h2>
             <ol className="space-y-6">
@@ -29,7 +29,7 @@ const HowWeWorkSection: React.FC = () => {
               ))}
             </ol>
           </div>
-          <div className="hidden lg:block max-w-3xl mx-auto">
+          <div className="hidden lg:block max-w-3xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-12">
               {t('sections.howWeWork.desktop.heading')}
             </h2>
