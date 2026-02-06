@@ -1,22 +1,15 @@
-import { useTranslation } from 'react-i18next';
-import { CALENDLY_DISCOVERY_URL, generateCalendarUrl, getDefaultDuration } from '../utils/calendar';
+import { CALENDLY_DISCOVERY_URL, CALENDLY_DIAGNOSTIC_URL } from '../utils/calendar';
 
 type AppointmentType = 'discovery' | 'diagnostic';
 
+const CALENDLY_URLS: Record<AppointmentType, string> = {
+  discovery: CALENDLY_DISCOVERY_URL,
+  diagnostic: CALENDLY_DIAGNOSTIC_URL,
+};
+
 export const useCalendarLink = (type: AppointmentType) => {
-  const { t } = useTranslation();
-
   const handleCalendarClick = () => {
-    const url =
-      type === 'discovery'
-        ? CALENDLY_DISCOVERY_URL
-        : generateCalendarUrl({
-            title: t('calendar.diagnostic.title'),
-            description: t('calendar.diagnostic.description'),
-            duration: getDefaultDuration(type),
-          });
-
-    window.open(url, '_blank', 'noopener,noreferrer');
+    window.open(CALENDLY_URLS[type], '_blank', 'noopener,noreferrer');
   };
 
   return handleCalendarClick;
