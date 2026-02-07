@@ -26,6 +26,7 @@ jobs:
         run: npm run build
         env:
           CI: false
+          PUBLIC_URL: /
 
       - name: Deploy to OVH FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
